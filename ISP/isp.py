@@ -1,8 +1,8 @@
 import network
 import time
-from umqtt.simple import MQTTClient
 import ds18x20
 import onewire
+from umqtt.simple import MQTTClient
 
 
 def blink(pin_name, t1, t2):
@@ -27,11 +27,12 @@ def connect_wifi(wifi_name, wifi_password):
 
 
 def connect_MQTT():
-    mqtt_client = MQTTClient(client_id="D1 mini", server="broker.hivemq.com", port=1883, keepalive=0)
+    mqtt_client = MQTTClient(client_id="D1 mini", server='broker.hivemq.com', port=1883, keepalive=0)
     mqtt_client.connect()
 
-    def sub_cb():
-        time.sleep_ms(200)
+    def sub_cb(topic, msg):
+        if msg != None:
+            print(str(msg), str(topic))
 
     mqtt_client.set_callback(sub_cb)
     return mqtt_client
@@ -53,3 +54,16 @@ def get_temp(ds, x):
 def get_light(pin_light):
     light = pin_light.read()
     return str(light)
+
+
+def mean(nums):
+    nums = list(map(float, nums))
+    return sum(nums) / len(nums)
+
+
+def clear_read(msg) -> str:
+    list_msg = list(msg)
+    del list_msg[0:2]
+    del list_msg[-1]
+    clear_msg = ''.join(list_msg)
+    return int(clear_msg)

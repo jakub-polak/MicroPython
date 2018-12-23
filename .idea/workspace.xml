@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7738bed8-51bc-4f43-ba65-7eaa15ff73ea" name="Default Changelist" comment="" />
+    <list default="true" id="7738bed8-51bc-4f43-ba65-7eaa15ff73ea" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/ISP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ISP/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ISP/boot.py" beforeDir="false" afterPath="$PROJECT_DIR$/ISP/boot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ISP/isp.py" beforeDir="false" afterPath="$PROJECT_DIR$/ISP/isp.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,7 +13,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ISP/boot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1288">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+              <folding>
+                <element signature="e#76#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ISP/isp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="253">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -26,10 +55,13 @@
       <list>
         <option value="$PROJECT_DIR$/isp" />
         <option value="$PROJECT_DIR$/isp.py" />
+        <option value="$PROJECT_DIR$/../Python---Masterclass/Tkinter/test.py" />
+        <option value="$PROJECT_DIR$/ISP/isp.py" />
+        <option value="$PROJECT_DIR$/ISP/boot.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="175" />
     <option name="y" value="55" />
     <option name="width" value="1750" />
@@ -40,7 +72,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -48,13 +79,20 @@
               <item name="MicroPython" type="b2602c69:ProjectViewProjectNode" />
               <item name="MicroPython" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="MicroPython" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MicroPython" type="462c0819:PsiDirectoryNode" />
+              <item name="ISP" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="RunDashboard">
@@ -111,7 +149,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24983476" />
@@ -134,10 +173,31 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/ISP" />
-    <entry file="file://$PROJECT_DIR$/isp.py">
+    <entry file="file://$PROJECT_DIR$/isp.py" />
+    <entry file="file://$PROJECT_DIR$/../Python---Masterclass/Tkinter/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="69">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISP/isp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ISP/boot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1288">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#76#85#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
