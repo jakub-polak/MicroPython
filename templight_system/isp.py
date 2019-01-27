@@ -18,24 +18,12 @@ def connect_wifi(wifi_name, wifi_password):
     wifi.scan()
     wifi.connect(wifi_name, wifi_password)
 
-    print("Connecting with {}".format(wifi_name))
+    print("\nConnecting with {}".format(wifi_name))
     while not wifi.isconnected():
         print('...')
         time.sleep_ms(250)
     else:
         print("Connected with {} successfully!".format(wifi_name))
-
-
-def connect_MQTT():
-    mqtt_client = MQTTClient(client_id="D1 mini", server='broker.hivemq.com', port=1883, keepalive=0)
-    mqtt_client.connect()
-
-    def sub_cb(topic, msg):
-        if msg != None:
-            print(str(msg), str(topic))
-
-    mqtt_client.set_callback(sub_cb)
-    return mqtt_client
 
 
 def connect_onewire(pin_temp):
@@ -59,11 +47,3 @@ def get_light(pin_light):
 def mean(nums):
     nums = list(map(float, nums))
     return sum(nums) / len(nums)
-
-
-def clear_read(msg) -> str:
-    list_msg = list(msg)
-    del list_msg[0:2]
-    del list_msg[-1]
-    clear_msg = ''.join(list_msg)
-    return int(clear_msg)

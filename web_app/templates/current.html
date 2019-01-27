@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+    <tbody>
+    <tr>
+        <td style="width: 100%;">
+            <form method='POST' action='/current'>
+                <table>
+                    Aktualny pomiar:
+                    <tr>
+                        <td>Temperatura:</td>
+                        <td><output name='temp' type='TEXT' width='60'>{{ cur_temp }}</output></td>
+                    </tr>
+                    <tr>
+                        <td>Naslonecznienie:</td>
+                        <td><output name='light' type='TEXT'>{{ cur_light }}</output></td>
+                    </tr>
+                </table>
+                <p><input value='Update' type='SUBMIT'></p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 100%;">
+            <form method='POST' action='/search4'>
+                <table>
+                    Narysuj wykres (RRRR-MM-DD):
+                    <tr>
+                        <td>Od:</td>
+                        <td><input name='temp' type='TEXT' width='60'></td>
+                    </tr>
+                    <tr>
+                        <td>Do:</td>
+                        <td><input name='light' type='TEXT' value='aeiou'></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p><input value='Zrób to!' type='SUBMIT'></p>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 100%;">
+            <form action="http://google.com">
+                <table>
+                    <tr>
+                        <td>W celu aktualizacji bazy danych nacisnij:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Go to Google"/></td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}

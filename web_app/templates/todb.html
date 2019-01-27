@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>DODANO DO BAZY DANYCH</h2>
+<form action="/database_view">
+    <table>
+        <tr>
+            <td><p><input type="submit" value="Przegladaj baze danych"/></p></td>
+        </tr>
+    </table>
+</form>
+<form action="/">
+    <table>
+        <tr>
+            <td><p><input type="submit" value="Powrót"/></p></td>
+        </tr>
+    </table>
+</form>
+
+
+{% endblock %}

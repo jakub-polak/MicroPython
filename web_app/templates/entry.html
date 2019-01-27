@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+<table border="1" style="border-collapse: collapse; width: 100%;">
+    <tbody>
+    <tr>
+        <td style="width: 100%;">
+                <table>
+                    Aktualny pomiar
+                    <tr>
+                        <td>Temperatura:</td>
+                        <td>
+                            <output name='temp'>{{ cur_temp }}</output>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Natężenie światła:</td>
+                        <td>
+                            <output name='light'>{{ cur_light }}</output>
+                        </td>
+                    </tr>
+                </table>
+                <form>
+                    <p><input type="submit" value="Refresh" onClick="history.go()"></p>
+                </form>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 100%;">
+            <form method='POST' action='/plot_database'>
+                <table>
+                    Narysuj wykres (RRRR-MM-DD)
+                    <tr>
+                        <td>Od:</td>
+                        <td><input name='date_from' type='TEXT' width='60'></td>
+                    </tr>
+                    <tr>
+                        <td>Do:</td>
+                        <td><input name='date_to' type='TEXT'></td>
+                    </tr>
+                </table>
+                <p><input value='Zrób to!' type='SUBMIT'></p>
+            </form>
+        </td>
+    </tr>
+    <tr>
+        <td style="width: 100%;">
+            <form action="/database_update">
+                <table>
+                    W celu aktualizacji bazy danych nacisnij
+                    <tr>
+                        <td><p><input type="submit" value="Aktualizuj"/></p></td>
+                    </tr>
+                </table>
+            </form>
+            <form action="/database_view">
+                <table>
+                    Przegladaj baze danych
+                    <tr>
+                        <td><p><input type="submit" value="Przegladaj"/></p></td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+{% endblock %}
